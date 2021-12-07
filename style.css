@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Playfair+Display+SC&display=swap');
+body {
+  height: 100vh;
+  margin: 0;
+  font-family:'Playfair Display', serif;
+}
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+.n-container {
+  background-color: #00465C;
+}
+.n-container a {
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+header .logo {
+  color: #70C69C;
+  font-weight: bold;
+}
+header nav ul{
+  display: flex;
+}
+header nav ul li{
+  display: block;
+  padding: 0 1em;
+}
+.head1, .i-design, name {
+  display: none;
+}
+
+/* intro */
+
+.intro {
+  background-color: #004A62;
+  color: #E8B297;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+.h-content2 {
+  color:#ffffff;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  /* width: */
+}
+
+/* about */
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.about {
+  position: relative;
+}
+.about ::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: #F5DCD0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  letter-spacing: 0.3em;
+  font-size: 0.85em;
+}
+.f-title {
+  color: #00465C;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: -.3em;
+  display: block;
+}
+.f-desc {
+  color: #333231;
+  margin-bottom: 3em;
+  line-height: 1.6em;
+  font-size: .8em;
+  font-weight: 500;
+}
+.about .n2 {  
+  display: none;
+} 
+.n2 {
+  max-width: 480px;
+}
+
+/* accomplishments */
+.accomplishments {
+  background: #004A62;
+}
+.a-container ul li {
+  background: white;
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+.a-container ul li .i-container {
+  height: 100px;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+.a-container ul li .i-container.one {
+  width: 90px;
+}
+.a-container ul li .i-container.two {
+  width: 80px;
+}
+.a-container ul li .i-container.three {
+  width: 120px;
+}
+.a-container ul li .i-container.four {
+  width: 60px;
+}
+.a-title {
+  font-weight: bold;
+  margin-top: 2em;
+}
+.a-desc {
+  margin-bottom: 2em;
+}
+
+/* projects */
+.projects {
+  background: #fafafa;
+}
+.p-container a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+/* footer */
+  .footer {
+    background-color: #00465C;
+    padding: unset;
+    margin-top: -2%;
+  }
+  .copyright {
+    color: white;
+  }
+
+/* media tags */
+@media only screen and (max-width: 600px) {
+  .about .n1 {  
+    height: auto;
+    width: 80vw;
+    max-width: 400px;
+
+  } 
+}
+@media only screen and (min-width: 600px) {
+  .about {
+    text-align: left;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .left {
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em; 
+  }
+  .accomplishments {
+    margin-top:-5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .about .n1 {  
+    display: none;
+  } 
+  .about .n2 {  
+    display: block;
+  } 
+  .accomplishments-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 2em;
+  }
+  .name {
+    display: unset;
+  }
+  /* .row {
+    float: left;
+    width: 50%;
+  } */
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 4%;
+  }
+  .a-container ul li {
+    background: white;
+    border-radius: 1em;
+    padding: 2em;
+    margin-bottom: 2em;
+    width: 30vw;
+  }
+  .a-container ul .column1{
+    margin-right: 8em;
+    margin-left: 1em;
+  }
+  .a-container ul .column2{
+    margin-left: 6em;
+    margin-right: 1em;
+  }  */
+
+  /* .projects {
+    padding-top: 7em;
+  }
+  .p-container img {
+    margin-left: 2em;
+  } */
+}
+
+@media only screen and (min-width: 800px) {
+  .about, .projects {
+    text-align: left;
+  }
+  .about, .p-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .left, .p-left {
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em; 
+  }
+  .about ::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #F5DCD0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .accomplishments {
+    margin-top:-5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .about .n1 {  
+    display: none;
+  } 
+  .about .n2 {  
+    display: block;
+  } 
+  .accomplishments-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 2em;
+  }
+  .projects {
+    padding-top: 7em;
+  }
+  .p-container img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .i-content {
+    height: 90vh;
+  }
+  .n-container {
+      display: grid;
+      grid-template-columns: 66% auto;
+      background: unset;
+  }
+  .n-container header {
+    background: #00465C;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .head1 {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 4em;
+  }
+  .head1 {
+    display: block;
+  }
+  .head1 ul{
+    display:flex;
+    justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .head1 ul img{
+    width: 20px;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .intro .i-content {
+    background: #004A62;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .intro .i-content h1{
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .h-content2 {
+    margin: unset;
+    display: flex;
+  }
+  .i-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .projects img {
+    float: right;
+    max-width: 500px;
+  }
+  .foot {
+    padding-right: 3%;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .head1 {
+    padding: 2em 10em 2em 0;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .intro .i-content {
+    padding: 6em 8em 6em 10em;
+  }
+  .n2 {
+    padding-left: 5em;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .head1 {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+  .intro .i-content {
+    padding: 9em 20em 6em 20em;
+  }
+  .n2 {
+    padding-left: 7em;
+  }
+}
+
